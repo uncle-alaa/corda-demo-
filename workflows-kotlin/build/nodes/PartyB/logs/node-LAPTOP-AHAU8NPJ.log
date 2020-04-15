@@ -1,0 +1,287 @@
+[WARN ] 2020-04-13T04:17:21,273Z [Thread-650 (ActiveMQ-server-org.apache.activemq.artemis.core.server.impl.ActiveMQServerImpl$5@2a801d1e)] core.client. - AMQ212037: Connection failure has been detected: AMQ119014: Did not receive data from /127.0.0.1:54608 within the 60,000ms connection TTL. The connection will now be closed. [code=CONNECTION_TIMEDOUT]
+[INFO ] 2020-04-13T04:17:24,088Z [nioEventLoopGroup-2-1] engine.ConnectionStateMachine. - Connection local close [id: 0x562de5cc, L:/127.0.0.1:54597 - R:localhost/127.0.0.1:10004] {conn=[id: 0x562de5cc, L:/127.0.0.1:54597 - R:localhost/127.0.0.1:10004], localLegalName=O=PartyB, L=New York, C=US, remoteLegalName=O=PartyA, L=London, C=GB, serverMode=false}
+[INFO ] 2020-04-13T04:17:25,704Z [nioEventLoopGroup-2-1] netty.AMQPClient. - Disconnected from localhost:10004
+[INFO ] 2020-04-13T04:17:25,741Z [nioEventLoopGroup-2-1] netty.AMQPChannelHandler. - Closed client connection 562de5cc from localhost/127.0.0.1:10004 to /127.0.0.1:54597 {allowedRemoteLegalNames=O=PartyA, L=London, C=GB, localCert=O=PartyB, L=New York, C=US, remoteAddress=localhost/127.0.0.1:10004, remoteCert=O=PartyA, L=London, C=GB, serverMode=false}
+[INFO ] 2020-04-13T04:17:25,754Z [nioEventLoopGroup-2-1] bridging.AMQPBridgeManager$AMQPBridge. - Bridge Disconnected {legalNames=O=PartyA, L=London, C=GB, maxMessageSize=10485760, queueName=internal.peers.DL3auWQFPNBu9RbLcBCdNGNBk5bfX8DM6y6v2G3M6Z3u7c, targets=localhost:10004}
+[INFO ] 2020-04-13T04:17:26,722Z [nioEventLoopGroup-2-2] netty.AMQPClient. - Retry connect to localhost:10004
+[INFO ] 2020-04-13T04:17:30,199Z [nioEventLoopGroup-2-3] netty.AMQPClient. - Connected to localhost:10004
+[INFO ] 2020-04-13T04:17:30,276Z [nioEventLoopGroup-2-3] netty.AMQPChannelHandler. - New client connection 79b7ff80 from localhost/127.0.0.1:10004 to /127.0.0.1:52752 {allowedRemoteLegalNames=O=PartyA, L=London, C=GB, localCert=null, remoteAddress=localhost/127.0.0.1:10004, remoteCert=null, serverMode=false}
+[INFO ] 2020-04-13T04:17:35,040Z [nioEventLoopGroup-2-3] netty.LoggingTrustManagerWrapper. - Check Server Certpath:
+  C=GB,L=London,O=PartyA[53E10E351CA4EE9C153448F7817ADD80456CCD39] issued by C=GB,L=London,O=PartyA[2A25DA8944978D14E5D66ACAC4A58EC28CAE4624]
+  C=GB,L=London,O=PartyA[2A25DA8944978D14E5D66ACAC4A58EC28CAE4624] issued by C=US,L=New York,OU=Corda,O=R3 HoldCo LLC,CN=Corda Doorman CA[EBEE2E30152940AE19981ED86FE37D7F07A2C213]
+  C=US,L=New York,OU=Corda,O=R3 HoldCo LLC,CN=Corda Doorman CA[EBEE2E30152940AE19981ED86FE37D7F07A2C213] issued by CN=Corda Node Root CA,O=R3,OU=corda,L=London,C=UK[7CAEA9DFB948012B13890B9AE645851C39170773]
+  CN=Corda Node Root CA,O=R3,OU=corda,L=London,C=UK[7CAEA9DFB948012B13890B9AE645851C39170773] issued by CN=Corda Node Root CA,O=R3,OU=corda,L=London,C=UK[null]
+[WARN ] 2020-04-13T04:17:35,086Z [HikariPool-1 housekeeper] pool.HikariPool. - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=6h11m35s346ms965µs800ns).
+[INFO ] 2020-04-13T04:17:35,293Z [nioEventLoopGroup-2-3] netty.AMQPChannelHandler. - Handshake completed with subject: O=PartyA, L=London, C=GB {allowedRemoteLegalNames=O=PartyA, L=London, C=GB, localCert=O=PartyB, L=New York, C=US, remoteAddress=localhost/127.0.0.1:10004, remoteCert=O=PartyA, L=London, C=GB, serverMode=false}
+[INFO ] 2020-04-13T04:17:35,301Z [nioEventLoopGroup-2-3] bridging.AMQPBridgeManager$AMQPBridge. - Bridge Connected {legalNames=O=PartyA, L=London, C=GB, maxMessageSize=10485760, queueName=internal.peers.DL3auWQFPNBu9RbLcBCdNGNBk5bfX8DM6y6v2G3M6Z3u7c, targets=localhost:10004}
+[INFO ] 2020-04-13T04:17:35,492Z [nioEventLoopGroup-2-3] engine.ConnectionStateMachine. - Connection local open [id: 0x79b7ff80, L:/127.0.0.1:52752 - R:localhost/127.0.0.1:10004] {conn=[id: 0x79b7ff80, L:/127.0.0.1:52752 - R:localhost/127.0.0.1:10004], localLegalName=O=PartyB, L=New York, C=US, remoteLegalName=O=PartyA, L=London, C=GB, serverMode=false}
+[WARN ] 2020-04-13T04:17:38,919Z [nioEventLoopGroup-2-3] netty.AMQPChannelHandler. - Closing channel due to nonrecoverable exception Une connexion existante a dû être fermée par l’hôte distant {allowedRemoteLegalNames=O=PartyA, L=London, C=GB, localCert=O=PartyB, L=New York, C=US, remoteAddress=localhost/127.0.0.1:10004, remoteCert=O=PartyA, L=London, C=GB, serverMode=false}
+[INFO ] 2020-04-13T04:17:38,926Z [nioEventLoopGroup-2-3] netty.AMQPClient. - Disconnected from localhost:10004
+[INFO ] 2020-04-13T04:17:38,956Z [nioEventLoopGroup-2-3] netty.AMQPChannelHandler. - Closed client connection 79b7ff80 from localhost/127.0.0.1:10004 to /127.0.0.1:52752 {allowedRemoteLegalNames=O=PartyA, L=London, C=GB, localCert=O=PartyB, L=New York, C=US, remoteAddress=localhost/127.0.0.1:10004, remoteCert=O=PartyA, L=London, C=GB, serverMode=false}
+[INFO ] 2020-04-13T04:17:38,956Z [nioEventLoopGroup-2-3] bridging.AMQPBridgeManager$AMQPBridge. - Bridge Disconnected {legalNames=O=PartyA, L=London, C=GB, maxMessageSize=10485760, queueName=internal.peers.DL3auWQFPNBu9RbLcBCdNGNBk5bfX8DM6y6v2G3M6Z3u7c, targets=localhost:10004}
+[INFO ] 2020-04-13T04:17:39,031Z [nioEventLoopGroup-2-3] engine.ConnectionStateMachine. - Connection local close [id: 0x79b7ff80, L:/127.0.0.1:52752 ! R:localhost/127.0.0.1:10004] {conn=[id: 0x79b7ff80, L:/127.0.0.1:52752 ! R:localhost/127.0.0.1:10004], localLegalName=O=PartyB, L=New York, C=US, remoteLegalName=O=PartyA, L=London, C=GB, serverMode=false}
+[INFO ] 2020-04-13T04:17:39,047Z [nioEventLoopGroup-2-3] engine.ConnectionStateMachine. - Transport Error [id: 0x79b7ff80, L:/127.0.0.1:52752 ! R:localhost/127.0.0.1:10004] {conn=[id: 0x79b7ff80, L:/127.0.0.1:52752 ! R:localhost/127.0.0.1:10004], localLegalName=O=PartyB, L=New York, C=US, remoteLegalName=O=PartyA, L=London, C=GB, serverMode=false}
+[INFO ] 2020-04-13T04:17:39,047Z [nioEventLoopGroup-2-3] engine.ConnectionStateMachine. - Error: connection aborted {conn=[id: 0x79b7ff80, L:/127.0.0.1:52752 ! R:localhost/127.0.0.1:10004], localLegalName=O=PartyB, L=New York, C=US, remoteLegalName=O=PartyA, L=London, C=GB, serverMode=false}
+[INFO ] 2020-04-13T04:17:39,053Z [nioEventLoopGroup-2-3] engine.ConnectionStateMachine. - Connection unbound [id: 0x79b7ff80, L:/127.0.0.1:52752 ! R:localhost/127.0.0.1:10004] {conn=[id: 0x79b7ff80, L:/127.0.0.1:52752 ! R:localhost/127.0.0.1:10004], localLegalName=O=PartyB, L=New York, C=US, remoteLegalName=O=PartyA, L=London, C=GB, serverMode=false}
+[INFO ] 2020-04-13T04:17:39,935Z [nioEventLoopGroup-2-4] netty.AMQPClient. - Retry connect to localhost:10004
+[INFO ] 2020-04-13T04:17:42,217Z [nioEventLoopGroup-2-5] netty.AMQPClient. - Failed to connect to localhost:10004
+[INFO ] 2020-04-13T04:17:44,220Z [nioEventLoopGroup-2-6] netty.AMQPClient. - Retry connect to localhost:10004
+[INFO ] 2020-04-13T04:17:46,514Z [nioEventLoopGroup-2-7] netty.AMQPClient. - Failed to connect to localhost:10004
+[INFO ] 2020-04-13T04:17:50,515Z [nioEventLoopGroup-2-8] netty.AMQPClient. - Retry connect to localhost:10004
+[INFO ] 2020-04-13T04:17:52,522Z [nioEventLoopGroup-2-9] netty.AMQPClient. - Failed to connect to localhost:10004
+[INFO ] 2020-04-13T04:18:00,523Z [nioEventLoopGroup-2-10] netty.AMQPClient. - Retry connect to localhost:10004
+[INFO ] 2020-04-13T04:18:02,531Z [nioEventLoopGroup-2-11] netty.AMQPClient. - Failed to connect to localhost:10004
+[INFO ] 2020-04-13T04:18:18,531Z [nioEventLoopGroup-2-12] netty.AMQPClient. - Retry connect to localhost:10004
+[INFO ] 2020-04-13T04:18:20,555Z [nioEventLoopGroup-2-13] netty.AMQPClient. - Failed to connect to localhost:10004
+[INFO ] 2020-04-13T04:18:52,555Z [nioEventLoopGroup-2-14] netty.AMQPClient. - Retry connect to localhost:10004
+[INFO ] 2020-04-13T04:18:54,566Z [nioEventLoopGroup-2-15] netty.AMQPClient. - Failed to connect to localhost:10004
+[INFO ] 2020-04-13T04:19:54,567Z [nioEventLoopGroup-2-16] netty.AMQPClient. - Retry connect to localhost:10004
+[INFO ] 2020-04-13T04:19:56,572Z [nioEventLoopGroup-2-1] netty.AMQPClient. - Failed to connect to localhost:10004
+[INFO ] 2020-04-13T04:20:56,573Z [nioEventLoopGroup-2-2] netty.AMQPClient. - Retry connect to localhost:10004
+[INFO ] 2020-04-13T04:20:58,585Z [nioEventLoopGroup-2-3] netty.AMQPClient. - Failed to connect to localhost:10004
+[INFO ] 2020-04-13T04:21:58,586Z [nioEventLoopGroup-2-4] netty.AMQPClient. - Retry connect to localhost:10004
+[INFO ] 2020-04-13T04:22:00,593Z [nioEventLoopGroup-2-5] netty.AMQPClient. - Failed to connect to localhost:10004
+[INFO ] 2020-04-13T04:23:00,595Z [nioEventLoopGroup-2-6] netty.AMQPClient. - Retry connect to localhost:10004
+[INFO ] 2020-04-13T04:23:02,607Z [nioEventLoopGroup-2-7] netty.AMQPClient. - Failed to connect to localhost:10004
+[INFO ] 2020-04-13T04:24:02,607Z [nioEventLoopGroup-2-8] netty.AMQPClient. - Retry connect to localhost:10004
+[INFO ] 2020-04-13T04:24:04,617Z [nioEventLoopGroup-2-9] netty.AMQPClient. - Failed to connect to localhost:10004
+[INFO ] 2020-04-13T04:25:04,617Z [nioEventLoopGroup-2-10] netty.AMQPClient. - Retry connect to localhost:10004
+[INFO ] 2020-04-13T04:25:06,628Z [nioEventLoopGroup-2-11] netty.AMQPClient. - Failed to connect to localhost:10004
+[INFO ] 2020-04-13T04:26:06,628Z [nioEventLoopGroup-2-12] netty.AMQPClient. - Retry connect to localhost:10004
+[INFO ] 2020-04-13T04:26:08,634Z [nioEventLoopGroup-2-13] netty.AMQPClient. - Failed to connect to localhost:10004
+[INFO ] 2020-04-13T04:27:08,635Z [nioEventLoopGroup-2-14] netty.AMQPClient. - Retry connect to localhost:10004
+[INFO ] 2020-04-13T04:27:10,647Z [nioEventLoopGroup-2-15] netty.AMQPClient. - Failed to connect to localhost:10004
+[INFO ] 2020-04-13T04:28:10,647Z [nioEventLoopGroup-2-16] netty.AMQPClient. - Retry connect to localhost:10004
+[INFO ] 2020-04-13T04:28:12,658Z [nioEventLoopGroup-2-1] netty.AMQPClient. - Failed to connect to localhost:10004
+[INFO ] 2020-04-13T04:29:12,658Z [nioEventLoopGroup-2-2] netty.AMQPClient. - Retry connect to localhost:10004
+[INFO ] 2020-04-13T04:29:14,668Z [nioEventLoopGroup-2-3] netty.AMQPClient. - Failed to connect to localhost:10004
+[INFO ] 2020-04-13T04:30:14,668Z [nioEventLoopGroup-2-4] netty.AMQPClient. - Retry connect to localhost:10004
+[INFO ] 2020-04-13T04:30:16,678Z [nioEventLoopGroup-2-5] netty.AMQPClient. - Failed to connect to localhost:10004
+[INFO ] 2020-04-13T04:31:16,679Z [nioEventLoopGroup-2-6] netty.AMQPClient. - Retry connect to localhost:10004
+[INFO ] 2020-04-13T04:31:18,688Z [nioEventLoopGroup-2-7] netty.AMQPClient. - Failed to connect to localhost:10004
+[INFO ] 2020-04-13T04:32:18,689Z [nioEventLoopGroup-2-8] netty.AMQPClient. - Retry connect to localhost:10004
+[INFO ] 2020-04-13T04:32:20,696Z [nioEventLoopGroup-2-9] netty.AMQPClient. - Failed to connect to localhost:10004
+[INFO ] 2020-04-13T04:33:20,698Z [nioEventLoopGroup-2-10] netty.AMQPClient. - Retry connect to localhost:10004
+[INFO ] 2020-04-13T04:33:22,755Z [nioEventLoopGroup-2-11] netty.AMQPClient. - Failed to connect to localhost:10004
+[INFO ] 2020-04-13T04:34:22,757Z [nioEventLoopGroup-2-12] netty.AMQPClient. - Retry connect to localhost:10004
+[INFO ] 2020-04-13T04:34:24,819Z [nioEventLoopGroup-2-13] netty.AMQPClient. - Failed to connect to localhost:10004
+[INFO ] 2020-04-13T04:35:24,822Z [nioEventLoopGroup-2-14] netty.AMQPClient. - Retry connect to localhost:10004
+[INFO ] 2020-04-13T04:35:26,840Z [nioEventLoopGroup-2-15] netty.AMQPClient. - Failed to connect to localhost:10004
+[INFO ] 2020-04-13T04:36:26,841Z [nioEventLoopGroup-2-16] netty.AMQPClient. - Retry connect to localhost:10004
+[INFO ] 2020-04-13T04:36:28,862Z [nioEventLoopGroup-2-1] netty.AMQPClient. - Failed to connect to localhost:10004
+[INFO ] 2020-04-13T04:37:28,864Z [nioEventLoopGroup-2-2] netty.AMQPClient. - Retry connect to localhost:10004
+[INFO ] 2020-04-13T04:37:30,877Z [nioEventLoopGroup-2-3] netty.AMQPClient. - Failed to connect to localhost:10004
+[INFO ] 2020-04-13T04:38:30,878Z [nioEventLoopGroup-2-4] netty.AMQPClient. - Retry connect to localhost:10004
+[INFO ] 2020-04-13T04:38:32,895Z [nioEventLoopGroup-2-5] netty.AMQPClient. - Failed to connect to localhost:10004
+[INFO ] 2020-04-13T04:39:32,896Z [nioEventLoopGroup-2-6] netty.AMQPClient. - Retry connect to localhost:10004
+[INFO ] 2020-04-13T04:39:35,164Z [nioEventLoopGroup-2-7] netty.AMQPClient. - Failed to connect to localhost:10004
+[INFO ] 2020-04-13T04:40:35,165Z [nioEventLoopGroup-2-8] netty.AMQPClient. - Retry connect to localhost:10004
+[INFO ] 2020-04-13T04:40:37,173Z [nioEventLoopGroup-2-9] netty.AMQPClient. - Failed to connect to localhost:10004
+[INFO ] 2020-04-13T04:41:37,175Z [nioEventLoopGroup-2-10] netty.AMQPClient. - Retry connect to localhost:10004
+[INFO ] 2020-04-13T04:41:39,189Z [nioEventLoopGroup-2-11] netty.AMQPClient. - Failed to connect to localhost:10004
+[INFO ] 2020-04-13T04:42:39,190Z [nioEventLoopGroup-2-12] netty.AMQPClient. - Retry connect to localhost:10004
+[INFO ] 2020-04-13T04:42:41,198Z [nioEventLoopGroup-2-13] netty.AMQPClient. - Failed to connect to localhost:10004
+[INFO ] 2020-04-13T04:43:41,199Z [nioEventLoopGroup-2-14] netty.AMQPClient. - Retry connect to localhost:10004
+[INFO ] 2020-04-13T04:43:43,207Z [nioEventLoopGroup-2-15] netty.AMQPClient. - Failed to connect to localhost:10004
+[INFO ] 2020-04-13T04:44:43,207Z [nioEventLoopGroup-2-16] netty.AMQPClient. - Retry connect to localhost:10004
+[INFO ] 2020-04-13T04:44:45,220Z [nioEventLoopGroup-2-1] netty.AMQPClient. - Failed to connect to localhost:10004
+[INFO ] 2020-04-13T04:45:46,881Z [nioEventLoopGroup-2-2] netty.AMQPClient. - Retry connect to localhost:10004
+[INFO ] 2020-04-13T04:45:48,893Z [nioEventLoopGroup-2-3] netty.AMQPClient. - Failed to connect to localhost:10004
+[INFO ] 2020-04-13T04:46:48,895Z [nioEventLoopGroup-2-4] netty.AMQPClient. - Retry connect to localhost:10004
+[INFO ] 2020-04-13T04:46:50,904Z [nioEventLoopGroup-2-5] netty.AMQPClient. - Failed to connect to localhost:10004
+[INFO ] 2020-04-13T04:47:50,904Z [nioEventLoopGroup-2-6] netty.AMQPClient. - Retry connect to localhost:10004
+[INFO ] 2020-04-13T04:47:52,911Z [nioEventLoopGroup-2-7] netty.AMQPClient. - Failed to connect to localhost:10004
+[INFO ] 2020-04-13T04:48:52,911Z [nioEventLoopGroup-2-8] netty.AMQPClient. - Retry connect to localhost:10004
+[INFO ] 2020-04-13T04:48:54,928Z [nioEventLoopGroup-2-9] netty.AMQPClient. - Failed to connect to localhost:10004
+[INFO ] 2020-04-13T04:49:54,928Z [nioEventLoopGroup-2-10] netty.AMQPClient. - Retry connect to localhost:10004
+[INFO ] 2020-04-13T04:49:56,939Z [nioEventLoopGroup-2-11] netty.AMQPClient. - Failed to connect to localhost:10004
+[INFO ] 2020-04-13T04:50:56,940Z [nioEventLoopGroup-2-12] netty.AMQPClient. - Retry connect to localhost:10004
+[INFO ] 2020-04-13T04:50:58,947Z [nioEventLoopGroup-2-13] netty.AMQPClient. - Failed to connect to localhost:10004
+[INFO ] 2020-04-13T04:51:58,948Z [nioEventLoopGroup-2-14] netty.AMQPClient. - Retry connect to localhost:10004
+[INFO ] 2020-04-13T04:52:00,955Z [nioEventLoopGroup-2-15] netty.AMQPClient. - Failed to connect to localhost:10004
+[INFO ] 2020-04-13T04:53:00,956Z [nioEventLoopGroup-2-16] netty.AMQPClient. - Retry connect to localhost:10004
+[INFO ] 2020-04-13T04:53:02,965Z [nioEventLoopGroup-2-1] netty.AMQPClient. - Failed to connect to localhost:10004
+[INFO ] 2020-04-13T04:54:02,966Z [nioEventLoopGroup-2-2] netty.AMQPClient. - Retry connect to localhost:10004
+[INFO ] 2020-04-13T04:54:04,973Z [nioEventLoopGroup-2-3] netty.AMQPClient. - Failed to connect to localhost:10004
+[INFO ] 2020-04-13T04:55:04,973Z [nioEventLoopGroup-2-4] netty.AMQPClient. - Retry connect to localhost:10004
+[INFO ] 2020-04-13T04:55:06,979Z [nioEventLoopGroup-2-5] netty.AMQPClient. - Failed to connect to localhost:10004
+[INFO ] 2020-04-13T04:56:06,980Z [nioEventLoopGroup-2-6] netty.AMQPClient. - Retry connect to localhost:10004
+[INFO ] 2020-04-13T04:56:08,992Z [nioEventLoopGroup-2-7] netty.AMQPClient. - Failed to connect to localhost:10004
+[INFO ] 2020-04-13T04:57:08,993Z [nioEventLoopGroup-2-8] netty.AMQPClient. - Retry connect to localhost:10004
+[INFO ] 2020-04-13T04:57:10,997Z [nioEventLoopGroup-2-9] netty.AMQPClient. - Failed to connect to localhost:10004
+[INFO ] 2020-04-13T04:58:10,997Z [nioEventLoopGroup-2-10] netty.AMQPClient. - Retry connect to localhost:10004
+[INFO ] 2020-04-13T04:58:13,003Z [nioEventLoopGroup-2-11] netty.AMQPClient. - Failed to connect to localhost:10004
+[INFO ] 2020-04-13T04:59:13,004Z [nioEventLoopGroup-2-12] netty.AMQPClient. - Retry connect to localhost:10004
+[INFO ] 2020-04-13T04:59:15,025Z [nioEventLoopGroup-2-13] netty.AMQPClient. - Failed to connect to localhost:10004
+[INFO ] 2020-04-13T05:00:15,026Z [nioEventLoopGroup-2-14] netty.AMQPClient. - Retry connect to localhost:10004
+[INFO ] 2020-04-13T05:00:17,038Z [nioEventLoopGroup-2-15] netty.AMQPClient. - Failed to connect to localhost:10004
+[INFO ] 2020-04-13T05:01:17,039Z [nioEventLoopGroup-2-16] netty.AMQPClient. - Retry connect to localhost:10004
+[INFO ] 2020-04-13T05:01:19,051Z [nioEventLoopGroup-2-1] netty.AMQPClient. - Failed to connect to localhost:10004
+[INFO ] 2020-04-13T05:02:19,052Z [nioEventLoopGroup-2-2] netty.AMQPClient. - Retry connect to localhost:10004
+[INFO ] 2020-04-13T05:02:21,060Z [nioEventLoopGroup-2-3] netty.AMQPClient. - Failed to connect to localhost:10004
+[INFO ] 2020-04-13T05:03:21,061Z [nioEventLoopGroup-2-4] netty.AMQPClient. - Retry connect to localhost:10004
+[INFO ] 2020-04-13T05:03:23,068Z [nioEventLoopGroup-2-5] netty.AMQPClient. - Failed to connect to localhost:10004
+[INFO ] 2020-04-13T05:04:23,069Z [nioEventLoopGroup-2-6] netty.AMQPClient. - Retry connect to localhost:10004
+[INFO ] 2020-04-13T05:04:25,081Z [nioEventLoopGroup-2-7] netty.AMQPClient. - Failed to connect to localhost:10004
+[INFO ] 2020-04-13T05:05:25,082Z [nioEventLoopGroup-2-8] netty.AMQPClient. - Retry connect to localhost:10004
+[INFO ] 2020-04-13T05:05:27,087Z [nioEventLoopGroup-2-9] netty.AMQPClient. - Failed to connect to localhost:10004
+[INFO ] 2020-04-13T05:06:27,088Z [nioEventLoopGroup-2-10] netty.AMQPClient. - Retry connect to localhost:10004
+[INFO ] 2020-04-13T05:06:29,098Z [nioEventLoopGroup-2-11] netty.AMQPClient. - Failed to connect to localhost:10004
+[INFO ] 2020-04-13T05:07:29,098Z [nioEventLoopGroup-2-12] netty.AMQPClient. - Retry connect to localhost:10004
+[INFO ] 2020-04-13T05:07:31,106Z [nioEventLoopGroup-2-13] netty.AMQPClient. - Failed to connect to localhost:10004
+[INFO ] 2020-04-13T05:08:31,106Z [nioEventLoopGroup-2-14] netty.AMQPClient. - Retry connect to localhost:10004
+[INFO ] 2020-04-13T05:08:33,126Z [nioEventLoopGroup-2-15] netty.AMQPClient. - Failed to connect to localhost:10004
+[INFO ] 2020-04-13T05:09:33,127Z [nioEventLoopGroup-2-16] netty.AMQPClient. - Retry connect to localhost:10004
+[INFO ] 2020-04-13T05:09:35,142Z [nioEventLoopGroup-2-1] netty.AMQPClient. - Failed to connect to localhost:10004
+[INFO ] 2020-04-13T05:10:35,146Z [nioEventLoopGroup-2-2] netty.AMQPClient. - Retry connect to localhost:10004
+[INFO ] 2020-04-13T05:10:37,161Z [nioEventLoopGroup-2-3] netty.AMQPClient. - Failed to connect to localhost:10004
+[INFO ] 2020-04-13T05:11:37,162Z [nioEventLoopGroup-2-4] netty.AMQPClient. - Retry connect to localhost:10004
+[INFO ] 2020-04-13T05:11:39,170Z [nioEventLoopGroup-2-5] netty.AMQPClient. - Failed to connect to localhost:10004
+[INFO ] 2020-04-13T05:12:39,172Z [nioEventLoopGroup-2-6] netty.AMQPClient. - Retry connect to localhost:10004
+[INFO ] 2020-04-13T05:12:41,201Z [nioEventLoopGroup-2-7] netty.AMQPClient. - Failed to connect to localhost:10004
+[INFO ] 2020-04-13T05:13:41,203Z [nioEventLoopGroup-2-8] netty.AMQPClient. - Retry connect to localhost:10004
+[INFO ] 2020-04-13T05:13:43,212Z [nioEventLoopGroup-2-9] netty.AMQPClient. - Failed to connect to localhost:10004
+[INFO ] 2020-04-13T05:14:43,213Z [nioEventLoopGroup-2-10] netty.AMQPClient. - Retry connect to localhost:10004
+[INFO ] 2020-04-13T05:14:45,221Z [nioEventLoopGroup-2-11] netty.AMQPClient. - Failed to connect to localhost:10004
+[INFO ] 2020-04-13T05:15:45,222Z [nioEventLoopGroup-2-12] netty.AMQPClient. - Retry connect to localhost:10004
+[INFO ] 2020-04-13T05:15:47,239Z [nioEventLoopGroup-2-13] netty.AMQPClient. - Failed to connect to localhost:10004
+[INFO ] 2020-04-13T05:16:47,240Z [nioEventLoopGroup-2-14] netty.AMQPClient. - Retry connect to localhost:10004
+[INFO ] 2020-04-13T05:16:49,248Z [nioEventLoopGroup-2-15] netty.AMQPClient. - Failed to connect to localhost:10004
+[INFO ] 2020-04-13T05:17:49,248Z [nioEventLoopGroup-2-16] netty.AMQPClient. - Retry connect to localhost:10004
+[INFO ] 2020-04-13T05:17:51,282Z [nioEventLoopGroup-2-1] netty.AMQPClient. - Failed to connect to localhost:10004
+[INFO ] 2020-04-13T05:18:51,283Z [nioEventLoopGroup-2-2] netty.AMQPClient. - Retry connect to localhost:10004
+[INFO ] 2020-04-13T05:18:53,294Z [nioEventLoopGroup-2-3] netty.AMQPClient. - Failed to connect to localhost:10004
+[INFO ] 2020-04-13T05:19:53,294Z [nioEventLoopGroup-2-4] netty.AMQPClient. - Retry connect to localhost:10004
+[INFO ] 2020-04-13T05:19:55,304Z [nioEventLoopGroup-2-5] netty.AMQPClient. - Failed to connect to localhost:10004
+[INFO ] 2020-04-13T05:20:55,304Z [nioEventLoopGroup-2-6] netty.AMQPClient. - Retry connect to localhost:10004
+[INFO ] 2020-04-13T05:20:57,320Z [nioEventLoopGroup-2-7] netty.AMQPClient. - Failed to connect to localhost:10004
+[INFO ] 2020-04-13T05:21:57,322Z [nioEventLoopGroup-2-8] netty.AMQPClient. - Retry connect to localhost:10004
+[INFO ] 2020-04-13T05:21:59,329Z [nioEventLoopGroup-2-9] netty.AMQPClient. - Failed to connect to localhost:10004
+[INFO ] 2020-04-13T05:22:59,329Z [nioEventLoopGroup-2-10] netty.AMQPClient. - Retry connect to localhost:10004
+[INFO ] 2020-04-13T05:23:01,340Z [nioEventLoopGroup-2-11] netty.AMQPClient. - Failed to connect to localhost:10004
+[INFO ] 2020-04-13T05:24:01,340Z [nioEventLoopGroup-2-12] netty.AMQPClient. - Retry connect to localhost:10004
+[INFO ] 2020-04-13T05:24:03,349Z [nioEventLoopGroup-2-13] netty.AMQPClient. - Failed to connect to localhost:10004
+[INFO ] 2020-04-13T05:25:03,349Z [nioEventLoopGroup-2-14] netty.AMQPClient. - Retry connect to localhost:10004
+[INFO ] 2020-04-13T05:25:05,356Z [nioEventLoopGroup-2-15] netty.AMQPClient. - Failed to connect to localhost:10004
+[INFO ] 2020-04-13T05:26:05,356Z [nioEventLoopGroup-2-16] netty.AMQPClient. - Retry connect to localhost:10004
+[INFO ] 2020-04-13T05:26:07,364Z [nioEventLoopGroup-2-1] netty.AMQPClient. - Failed to connect to localhost:10004
+[INFO ] 2020-04-13T05:27:07,364Z [nioEventLoopGroup-2-2] netty.AMQPClient. - Retry connect to localhost:10004
+[INFO ] 2020-04-13T05:27:09,375Z [nioEventLoopGroup-2-3] netty.AMQPClient. - Failed to connect to localhost:10004
+[INFO ] 2020-04-13T05:28:09,376Z [nioEventLoopGroup-2-4] netty.AMQPClient. - Retry connect to localhost:10004
+[INFO ] 2020-04-13T05:28:11,388Z [nioEventLoopGroup-2-5] netty.AMQPClient. - Failed to connect to localhost:10004
+[INFO ] 2020-04-13T05:29:11,388Z [nioEventLoopGroup-2-6] netty.AMQPClient. - Retry connect to localhost:10004
+[INFO ] 2020-04-13T05:29:13,398Z [nioEventLoopGroup-2-7] netty.AMQPClient. - Failed to connect to localhost:10004
+[INFO ] 2020-04-13T05:30:13,398Z [nioEventLoopGroup-2-8] netty.AMQPClient. - Retry connect to localhost:10004
+[INFO ] 2020-04-13T05:30:15,405Z [nioEventLoopGroup-2-9] netty.AMQPClient. - Failed to connect to localhost:10004
+[INFO ] 2020-04-13T05:31:15,406Z [nioEventLoopGroup-2-10] netty.AMQPClient. - Retry connect to localhost:10004
+[INFO ] 2020-04-13T05:31:17,412Z [nioEventLoopGroup-2-11] netty.AMQPClient. - Failed to connect to localhost:10004
+[INFO ] 2020-04-13T05:32:17,412Z [nioEventLoopGroup-2-12] netty.AMQPClient. - Retry connect to localhost:10004
+[INFO ] 2020-04-13T05:32:19,427Z [nioEventLoopGroup-2-13] netty.AMQPClient. - Failed to connect to localhost:10004
+[INFO ] 2020-04-13T05:33:19,428Z [nioEventLoopGroup-2-14] netty.AMQPClient. - Retry connect to localhost:10004
+[INFO ] 2020-04-13T05:33:21,438Z [nioEventLoopGroup-2-15] netty.AMQPClient. - Failed to connect to localhost:10004
+[INFO ] 2020-04-13T05:34:21,439Z [nioEventLoopGroup-2-16] netty.AMQPClient. - Retry connect to localhost:10004
+[INFO ] 2020-04-13T05:34:23,447Z [nioEventLoopGroup-2-1] netty.AMQPClient. - Failed to connect to localhost:10004
+[INFO ] 2020-04-13T05:35:23,450Z [nioEventLoopGroup-2-2] netty.AMQPClient. - Retry connect to localhost:10004
+[INFO ] 2020-04-13T05:35:25,456Z [nioEventLoopGroup-2-3] netty.AMQPClient. - Failed to connect to localhost:10004
+[INFO ] 2020-04-13T05:36:25,457Z [nioEventLoopGroup-2-4] netty.AMQPClient. - Retry connect to localhost:10004
+[INFO ] 2020-04-13T05:36:27,491Z [nioEventLoopGroup-2-5] netty.AMQPClient. - Failed to connect to localhost:10004
+[INFO ] 2020-04-13T05:37:27,492Z [nioEventLoopGroup-2-6] netty.AMQPClient. - Retry connect to localhost:10004
+[INFO ] 2020-04-13T05:37:29,501Z [nioEventLoopGroup-2-7] netty.AMQPClient. - Failed to connect to localhost:10004
+[INFO ] 2020-04-13T05:38:29,502Z [nioEventLoopGroup-2-8] netty.AMQPClient. - Retry connect to localhost:10004
+[INFO ] 2020-04-13T05:38:31,519Z [nioEventLoopGroup-2-9] netty.AMQPClient. - Failed to connect to localhost:10004
+[INFO ] 2020-04-13T05:39:31,520Z [nioEventLoopGroup-2-10] netty.AMQPClient. - Retry connect to localhost:10004
+[INFO ] 2020-04-13T05:39:33,527Z [nioEventLoopGroup-2-11] netty.AMQPClient. - Failed to connect to localhost:10004
+[INFO ] 2020-04-13T05:40:33,528Z [nioEventLoopGroup-2-12] netty.AMQPClient. - Retry connect to localhost:10004
+[INFO ] 2020-04-13T05:40:35,536Z [nioEventLoopGroup-2-13] netty.AMQPClient. - Failed to connect to localhost:10004
+[INFO ] 2020-04-13T05:41:35,536Z [nioEventLoopGroup-2-14] netty.AMQPClient. - Retry connect to localhost:10004
+[INFO ] 2020-04-13T05:41:37,550Z [nioEventLoopGroup-2-15] netty.AMQPClient. - Failed to connect to localhost:10004
+[INFO ] 2020-04-13T05:42:37,550Z [nioEventLoopGroup-2-16] netty.AMQPClient. - Retry connect to localhost:10004
+[INFO ] 2020-04-13T05:42:39,558Z [nioEventLoopGroup-2-1] netty.AMQPClient. - Failed to connect to localhost:10004
+[INFO ] 2020-04-13T05:43:39,558Z [nioEventLoopGroup-2-2] netty.AMQPClient. - Retry connect to localhost:10004
+[INFO ] 2020-04-13T05:43:41,565Z [nioEventLoopGroup-2-3] netty.AMQPClient. - Failed to connect to localhost:10004
+[INFO ] 2020-04-13T05:44:41,565Z [nioEventLoopGroup-2-4] netty.AMQPClient. - Retry connect to localhost:10004
+[INFO ] 2020-04-13T05:44:43,585Z [nioEventLoopGroup-2-5] netty.AMQPClient. - Failed to connect to localhost:10004
+[INFO ] 2020-04-13T05:45:43,585Z [nioEventLoopGroup-2-6] netty.AMQPClient. - Retry connect to localhost:10004
+[INFO ] 2020-04-13T05:45:45,591Z [nioEventLoopGroup-2-7] netty.AMQPClient. - Failed to connect to localhost:10004
+[INFO ] 2020-04-13T05:46:45,592Z [nioEventLoopGroup-2-8] netty.AMQPClient. - Retry connect to localhost:10004
+[INFO ] 2020-04-13T05:46:47,597Z [nioEventLoopGroup-2-9] netty.AMQPClient. - Failed to connect to localhost:10004
+[INFO ] 2020-04-13T05:47:47,598Z [nioEventLoopGroup-2-10] netty.AMQPClient. - Retry connect to localhost:10004
+[INFO ] 2020-04-13T05:47:49,607Z [nioEventLoopGroup-2-11] netty.AMQPClient. - Failed to connect to localhost:10004
+[INFO ] 2020-04-13T05:48:49,608Z [nioEventLoopGroup-2-12] netty.AMQPClient. - Retry connect to localhost:10004
+[INFO ] 2020-04-13T05:48:51,617Z [nioEventLoopGroup-2-13] netty.AMQPClient. - Failed to connect to localhost:10004
+[INFO ] 2020-04-13T05:49:51,617Z [nioEventLoopGroup-2-14] netty.AMQPClient. - Retry connect to localhost:10004
+[INFO ] 2020-04-13T05:49:53,625Z [nioEventLoopGroup-2-15] netty.AMQPClient. - Failed to connect to localhost:10004
+[INFO ] 2020-04-13T05:50:53,625Z [nioEventLoopGroup-2-16] netty.AMQPClient. - Retry connect to localhost:10004
+[INFO ] 2020-04-13T05:50:55,631Z [nioEventLoopGroup-2-1] netty.AMQPClient. - Failed to connect to localhost:10004
+[INFO ] 2020-04-13T05:51:55,633Z [nioEventLoopGroup-2-2] netty.AMQPClient. - Retry connect to localhost:10004
+[INFO ] 2020-04-13T05:51:57,641Z [nioEventLoopGroup-2-3] netty.AMQPClient. - Failed to connect to localhost:10004
+[INFO ] 2020-04-13T05:52:57,643Z [nioEventLoopGroup-2-4] netty.AMQPClient. - Retry connect to localhost:10004
+[INFO ] 2020-04-13T05:52:59,649Z [nioEventLoopGroup-2-5] netty.AMQPClient. - Failed to connect to localhost:10004
+[INFO ] 2020-04-13T05:53:59,650Z [nioEventLoopGroup-2-6] netty.AMQPClient. - Retry connect to localhost:10004
+[INFO ] 2020-04-13T05:54:01,657Z [nioEventLoopGroup-2-7] netty.AMQPClient. - Failed to connect to localhost:10004
+[INFO ] 2020-04-13T05:55:01,657Z [nioEventLoopGroup-2-8] netty.AMQPClient. - Retry connect to localhost:10004
+[INFO ] 2020-04-13T05:55:03,667Z [nioEventLoopGroup-2-9] netty.AMQPClient. - Failed to connect to localhost:10004
+[INFO ] 2020-04-13T05:56:03,668Z [nioEventLoopGroup-2-10] netty.AMQPClient. - Retry connect to localhost:10004
+[INFO ] 2020-04-13T05:56:05,674Z [nioEventLoopGroup-2-11] netty.AMQPClient. - Failed to connect to localhost:10004
+[INFO ] 2020-04-13T05:57:05,676Z [nioEventLoopGroup-2-12] netty.AMQPClient. - Retry connect to localhost:10004
+[INFO ] 2020-04-13T05:57:07,687Z [nioEventLoopGroup-2-13] netty.AMQPClient. - Failed to connect to localhost:10004
+[INFO ] 2020-04-13T05:58:07,687Z [nioEventLoopGroup-2-14] netty.AMQPClient. - Retry connect to localhost:10004
+[INFO ] 2020-04-13T05:58:09,698Z [nioEventLoopGroup-2-15] netty.AMQPClient. - Failed to connect to localhost:10004
+[INFO ] 2020-04-13T05:59:09,698Z [nioEventLoopGroup-2-16] netty.AMQPClient. - Retry connect to localhost:10004
+[INFO ] 2020-04-13T05:59:11,705Z [nioEventLoopGroup-2-1] netty.AMQPClient. - Failed to connect to localhost:10004
+[INFO ] 2020-04-13T06:00:11,707Z [nioEventLoopGroup-2-2] netty.AMQPClient. - Retry connect to localhost:10004
+[INFO ] 2020-04-13T06:00:13,714Z [nioEventLoopGroup-2-3] netty.AMQPClient. - Failed to connect to localhost:10004
+[INFO ] 2020-04-13T06:01:13,714Z [nioEventLoopGroup-2-4] netty.AMQPClient. - Retry connect to localhost:10004
+[INFO ] 2020-04-13T06:01:15,728Z [nioEventLoopGroup-2-5] netty.AMQPClient. - Failed to connect to localhost:10004
+[INFO ] 2020-04-13T06:02:15,729Z [nioEventLoopGroup-2-6] netty.AMQPClient. - Retry connect to localhost:10004
+[INFO ] 2020-04-13T06:02:17,740Z [nioEventLoopGroup-2-7] netty.AMQPClient. - Failed to connect to localhost:10004
+[INFO ] 2020-04-13T06:03:17,740Z [nioEventLoopGroup-2-8] netty.AMQPClient. - Retry connect to localhost:10004
+[INFO ] 2020-04-13T06:03:19,749Z [nioEventLoopGroup-2-9] netty.AMQPClient. - Failed to connect to localhost:10004
+[INFO ] 2020-04-13T06:04:19,749Z [nioEventLoopGroup-2-10] netty.AMQPClient. - Retry connect to localhost:10004
+[INFO ] 2020-04-13T06:04:21,756Z [nioEventLoopGroup-2-11] netty.AMQPClient. - Failed to connect to localhost:10004
+[INFO ] 2020-04-13T06:05:21,756Z [nioEventLoopGroup-2-12] netty.AMQPClient. - Retry connect to localhost:10004
+[INFO ] 2020-04-13T06:05:23,762Z [nioEventLoopGroup-2-13] netty.AMQPClient. - Failed to connect to localhost:10004
+[INFO ] 2020-04-13T06:06:23,763Z [nioEventLoopGroup-2-14] netty.AMQPClient. - Retry connect to localhost:10004
+[INFO ] 2020-04-13T06:06:25,772Z [nioEventLoopGroup-2-15] netty.AMQPClient. - Failed to connect to localhost:10004
+[INFO ] 2020-04-13T06:07:25,773Z [nioEventLoopGroup-2-16] netty.AMQPClient. - Retry connect to localhost:10004
+[INFO ] 2020-04-13T06:07:27,783Z [nioEventLoopGroup-2-1] netty.AMQPClient. - Failed to connect to localhost:10004
+[INFO ] 2020-04-13T06:08:27,785Z [nioEventLoopGroup-2-2] netty.AMQPClient. - Retry connect to localhost:10004
+[INFO ] 2020-04-13T06:08:29,798Z [nioEventLoopGroup-2-3] netty.AMQPClient. - Failed to connect to localhost:10004
+[INFO ] 2020-04-13T06:09:29,798Z [nioEventLoopGroup-2-4] netty.AMQPClient. - Retry connect to localhost:10004
+[INFO ] 2020-04-13T06:09:31,808Z [nioEventLoopGroup-2-5] netty.AMQPClient. - Failed to connect to localhost:10004
+[INFO ] 2020-04-13T06:10:31,809Z [nioEventLoopGroup-2-6] netty.AMQPClient. - Retry connect to localhost:10004
+[INFO ] 2020-04-13T06:10:33,818Z [nioEventLoopGroup-2-7] netty.AMQPClient. - Failed to connect to localhost:10004
+[INFO ] 2020-04-13T06:11:33,819Z [nioEventLoopGroup-2-8] netty.AMQPClient. - Retry connect to localhost:10004
+[INFO ] 2020-04-13T06:11:35,831Z [nioEventLoopGroup-2-9] netty.AMQPClient. - Failed to connect to localhost:10004
+[INFO ] 2020-04-13T06:12:35,832Z [nioEventLoopGroup-2-10] netty.AMQPClient. - Retry connect to localhost:10004
+[INFO ] 2020-04-13T06:12:37,866Z [nioEventLoopGroup-2-11] netty.AMQPClient. - Failed to connect to localhost:10004
+[INFO ] 2020-04-13T06:13:37,866Z [nioEventLoopGroup-2-12] netty.AMQPClient. - Retry connect to localhost:10004
+[INFO ] 2020-04-13T06:13:39,880Z [nioEventLoopGroup-2-13] netty.AMQPClient. - Failed to connect to localhost:10004
+[INFO ] 2020-04-13T06:14:39,882Z [nioEventLoopGroup-2-14] netty.AMQPClient. - Retry connect to localhost:10004
+[INFO ] 2020-04-13T06:14:41,892Z [nioEventLoopGroup-2-15] netty.AMQPClient. - Failed to connect to localhost:10004
+[INFO ] 2020-04-13T06:15:41,893Z [nioEventLoopGroup-2-16] netty.AMQPClient. - Retry connect to localhost:10004
+[INFO ] 2020-04-13T06:15:43,904Z [nioEventLoopGroup-2-1] netty.AMQPClient. - Failed to connect to localhost:10004
+[INFO ] 2020-04-13T06:16:43,905Z [nioEventLoopGroup-2-2] netty.AMQPClient. - Retry connect to localhost:10004
+[INFO ] 2020-04-13T06:16:45,913Z [nioEventLoopGroup-2-3] netty.AMQPClient. - Failed to connect to localhost:10004
+[INFO ] 2020-04-13T06:17:45,913Z [nioEventLoopGroup-2-4] netty.AMQPClient. - Retry connect to localhost:10004
+[INFO ] 2020-04-13T06:17:47,922Z [nioEventLoopGroup-2-5] netty.AMQPClient. - Failed to connect to localhost:10004
+[INFO ] 2020-04-13T06:18:47,924Z [nioEventLoopGroup-2-6] netty.AMQPClient. - Retry connect to localhost:10004
+[INFO ] 2020-04-13T06:18:49,936Z [nioEventLoopGroup-2-7] netty.AMQPClient. - Failed to connect to localhost:10004
+[INFO ] 2020-04-13T06:19:49,937Z [nioEventLoopGroup-2-8] netty.AMQPClient. - Retry connect to localhost:10004
+[INFO ] 2020-04-13T06:19:51,948Z [nioEventLoopGroup-2-9] netty.AMQPClient. - Failed to connect to localhost:10004
+[INFO ] 2020-04-13T06:20:51,950Z [nioEventLoopGroup-2-10] netty.AMQPClient. - Retry connect to localhost:10004
+[INFO ] 2020-04-13T06:20:53,976Z [nioEventLoopGroup-2-11] netty.AMQPClient. - Failed to connect to localhost:10004
+[INFO ] 2020-04-13T06:21:53,976Z [nioEventLoopGroup-2-12] netty.AMQPClient. - Retry connect to localhost:10004
+[INFO ] 2020-04-13T06:21:55,986Z [nioEventLoopGroup-2-13] netty.AMQPClient. - Failed to connect to localhost:10004
+[INFO ] 2020-04-13T06:22:55,986Z [nioEventLoopGroup-2-14] netty.AMQPClient. - Retry connect to localhost:10004
+[INFO ] 2020-04-13T06:22:57,999Z [nioEventLoopGroup-2-15] netty.AMQPClient. - Failed to connect to localhost:10004
+[INFO ] 2020-04-13T06:23:57,999Z [nioEventLoopGroup-2-16] netty.AMQPClient. - Retry connect to localhost:10004
+[INFO ] 2020-04-13T06:24:00,012Z [nioEventLoopGroup-2-1] netty.AMQPClient. - Failed to connect to localhost:10004
+[INFO ] 2020-04-13T06:25:00,015Z [nioEventLoopGroup-2-2] netty.AMQPClient. - Retry connect to localhost:10004
+[INFO ] 2020-04-13T06:25:02,024Z [nioEventLoopGroup-2-3] netty.AMQPClient. - Failed to connect to localhost:10004
+[INFO ] 2020-04-13T06:26:02,025Z [nioEventLoopGroup-2-4] netty.AMQPClient. - Retry connect to localhost:10004
+[INFO ] 2020-04-13T06:26:04,031Z [nioEventLoopGroup-2-5] netty.AMQPClient. - Failed to connect to localhost:10004
+[INFO ] 2020-04-13T06:27:04,032Z [nioEventLoopGroup-2-6] netty.AMQPClient. - Retry connect to localhost:10004
+[INFO ] 2020-04-13T06:27:06,435Z [nioEventLoopGroup-2-7] netty.AMQPClient. - Failed to connect to localhost:10004
+[INFO ] 2020-04-13T06:28:06,435Z [nioEventLoopGroup-2-8] netty.AMQPClient. - Retry connect to localhost:10004
+[INFO ] 2020-04-13T06:28:08,570Z [nioEventLoopGroup-2-9] netty.AMQPClient. - Failed to connect to localhost:10004

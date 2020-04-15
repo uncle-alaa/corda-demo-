@@ -1,0 +1,148 @@
+[INFO ] 2020-04-10T19:19:43,408 [main] ServerKt - Starting ServerKt on LAPTOP-AHAU8NPJ with PID 28304 (C:\Users\abour\samples\cordapp-example\clients\build\classes\kotlin\main started by abour in C:\Users\abour\samples\cordapp-example\clients)
+[INFO ] 2020-04-10T19:19:43,446 [main] ServerKt - No active profile set, falling back to default profiles: default
+[INFO ] 2020-04-10T19:19:44,175 [main] AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@72209d93: startup date [Fri Apr 10 21:19:44 CEST 2020]; root of context hierarchy
+[INFO ] 2020-04-10T19:19:50,043 [background-preinit] Version - HV000001: Hibernate Validator 5.3.5.Final
+[INFO ] 2020-04-10T19:20:16,769 [main] TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 50006 (http)
+[INFO ] 2020-04-10T19:20:17,390 [main] StandardService - Starting service [Tomcat]
+[INFO ] 2020-04-10T19:20:17,413 [main] StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.20
+[INFO ] 2020-04-10T19:20:20,433 [localhost-startStop-1] [/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2020-04-10T19:20:20,437 [localhost-startStop-1] ContextLoader - Root WebApplicationContext: initialization completed in 36307 ms
+[INFO ] 2020-04-10T19:20:23,064 [localhost-startStop-1] ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+[INFO ] 2020-04-10T19:20:23,100 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+[INFO ] 2020-04-10T19:20:23,101 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[INFO ] 2020-04-10T19:20:23,101 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[INFO ] 2020-04-10T19:20:23,101 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+[INFO ] 2020-04-10T19:21:20,118 [main] RPCClient - Startup took 33338 msec
+[INFO ] 2020-04-10T19:21:23,805 [main] RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@72209d93: startup date [Fri Apr 10 21:19:44 CEST 2020]; root of context hierarchy
+[INFO ] 2020-04-10T19:21:24,856 [main] RequestMappingHandlerMapping - Mapped "{[/api/example/me],methods=[GET],produces=[application/json]}" onto public final java.util.Map<java.lang.String, net.corda.core.identity.CordaX500Name> com.example.server.MainController.whoami()
+[INFO ] 2020-04-10T19:21:24,860 [main] RequestMappingHandlerMapping - Mapped "{[/api/example/peers],methods=[GET],produces=[application/json]}" onto public final java.util.Map<java.lang.String, java.util.List<net.corda.core.identity.CordaX500Name>> com.example.server.MainController.getPeers()
+[INFO ] 2020-04-10T19:21:24,861 [main] RequestMappingHandlerMapping - Mapped "{[/api/example/ious],methods=[GET],produces=[application/json]}" onto public final org.springframework.http.ResponseEntity<java.util.List<net.corda.core.contracts.StateAndRef<com.example.state.IOUState>>> com.example.server.MainController.getIOUs()
+[INFO ] 2020-04-10T19:21:24,864 [main] RequestMappingHandlerMapping - Mapped "{[/api/example/create-iou],methods=[POST],consumes=[application/x-www-form-urlencoded],produces=[text/plain]}" onto public final org.springframework.http.ResponseEntity<java.lang.String> com.example.server.MainController.createIOU(javax.servlet.http.HttpServletRequest)
+[INFO ] 2020-04-10T19:21:24,865 [main] RequestMappingHandlerMapping - Mapped "{[/api/example/my-ious],methods=[GET],produces=[application/json]}" onto public final org.springframework.http.ResponseEntity<java.util.List<net.corda.core.contracts.StateAndRef<com.example.state.IOUState>>> com.example.server.MainController.getMyIOUs()
+[INFO ] 2020-04-10T19:21:24,876 [main] RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[INFO ] 2020-04-10T19:21:24,877 [main] RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[INFO ] 2020-04-10T19:21:25,073 [main] SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2020-04-10T19:21:25,075 [main] SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2020-04-10T19:21:25,362 [main] SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2020-04-10T19:21:25,920 [main] WebMvcAutoConfiguration$WelcomePageHandlerMapping - Adding welcome page: class path resource [public/index.html]
+[INFO ] 2020-04-10T19:21:27,367 [main] AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+[INFO ] 2020-04-10T19:21:28,151 [main] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-50006"]
+[INFO ] 2020-04-10T19:21:28,366 [main] Http11NioProtocol - Starting ProtocolHandler ["http-nio-50006"]
+[INFO ] 2020-04-10T19:21:28,378 [main] NioSelectorPool - Using a shared selector for servlet write/read
+[INFO ] 2020-04-10T19:21:28,751 [main] TomcatEmbeddedServletContainer - Tomcat started on port(s): 50006 (http)
+[INFO ] 2020-04-10T19:21:28,792 [main] ServerKt - Started ServerKt in 111.593 seconds (JVM running for 119.984)
+[WARN ] 2020-04-10T20:14:49,336 [Thread-1 (ActiveMQ-client-factory-threads-597531831)] RPCClientProxyHandler - Terminating observables.
+[ERROR] 2020-04-10T20:14:51,116 [Thread-1 (ActiveMQ-client-factory-threads-597531831)] rejectedExecution - Failed to submit a listener notification task. Event loop shut down?
+java.util.concurrent.RejectedExecutionException: event executor terminated
+	at io.netty.util.concurrent.SingleThreadEventExecutor.reject(SingleThreadEventExecutor.java:842) ~[netty-common-4.1.29.Final.jar:4.1.29.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor.offerTask(SingleThreadEventExecutor.java:328) ~[netty-common-4.1.29.Final.jar:4.1.29.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor.addTask(SingleThreadEventExecutor.java:321) ~[netty-common-4.1.29.Final.jar:4.1.29.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor.execute(SingleThreadEventExecutor.java:765) ~[netty-common-4.1.29.Final.jar:4.1.29.Final]
+	at io.netty.util.concurrent.DefaultPromise.safeExecute(DefaultPromise.java:768) ~[netty-common-4.1.29.Final.jar:4.1.29.Final]
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:432) ~[netty-common-4.1.29.Final.jar:4.1.29.Final]
+	at io.netty.util.concurrent.DefaultPromise.setFailure(DefaultPromise.java:112) ~[netty-common-4.1.29.Final.jar:4.1.29.Final]
+	at io.netty.channel.DefaultChannelPromise.setFailure(DefaultChannelPromise.java:89) ~[netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.safeExecute(AbstractChannelHandlerContext.java:1010) ~[netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.close(AbstractChannelHandlerContext.java:610) ~[netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.close(AbstractChannelHandlerContext.java:465) ~[netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.DefaultChannelPipeline.close(DefaultChannelPipeline.java:1003) ~[netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.AbstractChannel.close(AbstractChannel.java:238) ~[netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at org.apache.activemq.artemis.core.remoting.impl.netty.NettyConnection.closeChannel(NettyConnection.java:558[INFO ] 2020-04-10T19:19:14,789 [main] ServerKt - Starting ServerKt on LAPTOP-AHAU8NPJ with PID 28572 (C:\Users\abour\samples\cordapp-example\clients\build\classes\kotlin\main started by abour in C:\Users\abour\samples\cordapp-example\clients)
+[INFO ] 2020-04-10T19:19:14,811 [main] ServerKt - No active profile set, falling back to default profiles: default
+[INFO ] 2020-04-10T19:19:15,168 [main] AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1ded7b14: startup date [Fri Apr 10 21:19:15 CEST 2020]; root of context hierarchy
+[INFO ] 2020-04-10T19:19:21,934 [background-preinit] Version - HV000001: Hibernate Validator 5.3.5.Final
+[INFO ] 2020-04-10T19:19:34,487 [main] TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 50005 (http)
+[INFO ] 2020-04-10T19:19:34,602 [main] StandardService - Starting service [Tomcat]
+[INFO ] 2020-04-10T19:19:34,607 [main] StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.20
+[INFO ] 2020-04-10T19:19:37,419 [localhost-startStop-1] [/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2020-04-10T19:19:37,461 [localhost-startStop-1] ContextLoader - Root WebApplicationContext: initialization completed in 22306 ms
+[INFO ] 2020-04-10T19:19:38,293 [localhost-startStop-1] ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+[INFO ] 2020-04-10T19:19:38,345 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+[INFO ] 2020-04-10T19:19:38,346 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[INFO ] 2020-04-10T19:19:38,347 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[INFO ] 2020-04-10T19:19:38,348 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+[INFO ] 2020-04-10T19:21:02,331 [main] RPCClient - Startup took 48514 msec
+[INFO ] 2020-04-10T19:21:11,306 [main] RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1ded7b14: startup date [Fri Apr 10 21:19:15 CEST 2020]; root of context hierarchy
+[INFO ] 2020-04-10T19:21:11,935 [main] RequestMappingHandlerMapping - Mapped "{[/api/example/ious],methods=[GET],produces=[application/json]}" onto public final org.springframework.http.ResponseEntity<java.util.List<net.corda.core.contracts.StateAndRef<com.example.state.IOUState>>> com.example.server.MainController.getIOUs()
+[INFO ] 2020-04-10T19:21:11,947 [main] RequestMappingHandlerMapping - Mapped "{[/api/example/create-iou],methods=[POST],consumes=[application/x-www-form-urlencoded],produces=[text/plain]}" onto public final org.springframework.http.ResponseEntity<java.lang.String> com.example.server.MainController.createIOU(javax.servlet.http.HttpServletRequest)
+[INFO ] 2020-04-10T19:21:11,948 [main] RequestMappingHandlerMapping - Mapped "{[/api/example/me],methods=[GET],produces=[application/json]}" onto public final java.util.Map<java.lang.String, net.corda.core.identity.CordaX500Name> com.example.server.MainController.whoami()
+[INFO ] 2020-04-10T19:21:11,949 [main] RequestMappingHandlerMapping - Mapped "{[/api/example/my-ious],methods=[GET],produces=[application/json]}" onto public final org.springframework.http.ResponseEntity<java.util.List<net.corda.core.contracts.StateAndRef<com.example.state.IOUState>>> com.example.server.MainController.getMyIOUs()
+[INFO ] 2020-04-10T19:21:11,950 [main] RequestMappingHandlerMapping - Mapped "{[/api/example/peers],methods=[GET],produces=[application/json]}" onto public final java.util.Map<java.lang.String, java.util.List<net.corda.core.identity.CordaX500Name>> com.example.server.MainController.getPeers()
+[INFO ] 2020-04-10T19:21:11,955 [main] RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[INFO ] 2020-04-10T19:21:11,956 [main] RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[INFO ] 2020-04-10T19:21:12,114 [main] SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2020-04-10T19:21:12,115 [main] SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2020-04-10T19:21:13,261 [main] SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2020-04-10T19:21:13,594 [main] WebMvcAutoConfiguration$WelcomePageHandlerMapping - Adding welcome page: class path resource [public/index.html]
+[INFO ] 2020-04-10T19:21:14,582 [main] AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+[INFO ] 2020-04-10T19:21:14,897 [main] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-50005"]
+[INFO ] 2020-04-10T19:21:15,038 [main] Http11NioProtocol - Starting ProtocolHandler ["http-nio-50005"]
+[INFO ] 2020-04-10T19:21:15,073 [main] NioSelectorPool - Using a shared selector for servlet write/read
+[INFO ] 2020-04-10T19:21:15,444 [main] TomcatEmbeddedServletContainer - Tomcat started on port(s): 50005 (http)
+[INFO ] 2020-04-10T19:21:15,501 [main] ServerKt - Started ServerKt in 124.996 seconds (JVM running for 134.498)
+[WARN ] 2020-04-10T20:14:51,417 [Thread-1 (ActiveMQ-client-factory-threads-1630254933)] RPCClientProxyHandler - Terminating observables.
+[ERROR] 2020-04-10T20:14:51,754 [Thread-1 (ActiveMQ-client-factory-threads-1630254933)] rejectedExecution - Failed to submit a listener notification task. Event loop shut down?
+java.util.concurrent.RejectedExecutionException: event executor terminated
+	at io.netty.util.concurrent.SingleThreadEventExecutor.reject(SingleThreadEventExecutor.java:842) ~[netty-common-4.1.29.Final.jar:4.1.29.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor.offerTask(SingleThreadEventExecutor.java:328) ~[netty-common-4.1.29.Final.jar:4.1.29.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor.addTask(SingleThreadEventExecutor.java:321) ~[netty-common-4.1.29.Final.jar:4.1.29.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor.execute(SingleThreadEventExecutor.java:765) ~[netty-common-4.1.29.Final.jar:4.1.29.Final]
+	at io.netty.util.concurrent.DefaultPromise.safeExecute(DefaultPromise.java:768) ~[netty-common-4.1.29.Final.jar:4.1.29.Final]
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:432) ~[netty-common-4.1.29.Final.jar:4.1.29.Final]
+	at io.netty.util.concurrent.DefaultPromise.setFailure(DefaultPromise.java:112) ~[netty-common-4.1.29.Final.jar:4.1.29.Final]
+	at io.netty.channel.DefaultChannelPromise.setFailure(DefaultChannelPromise.java:89) ~[netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.safeExecute(AbstractChannelHandlerContext.java:1010) ~[netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.close(AbstractChannelHandlerContext.java:610) ~[netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.close(AbstractChannelHandlerContext.java:465) ~[netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.DefaultChannelPipeline.close(DefaultChannelPipeline.java:1003) ~[netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.AbstractChannel.close(AbstractChannel.java:238) ~[netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at org.apache.activemq.artemis.core.remoting.impl.netty.NettyConnection.closeChannel(NettyConnection.java:5[INFO ] 2020-04-10T19:19:59,659 [main] ServerKt - Starting ServerKt on LAPTOP-AHAU8NPJ with PID 26912 (C:\Users\abour\samples\cordapp-example\clients\build\classes\kotlin\main started by abour in C:\Users\abour\samples\cordapp-example\clients)
+[INFO ] 2020-04-10T19:19:59,699 [main] ServerKt - No active profile set, falling back to default profiles: default
+[INFO ] 2020-04-10T19:20:00,421 [main] AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1ded7b14: startup date [Fri Apr 10 21:20:00 CEST 2020]; root of context hierarchy
+[INFO ] 2020-04-10T19:20:05,460 [background-preinit] Version - HV000001: Hibernate Validator 5.3.5.Final
+[INFO ] 2020-04-10T19:20:15,809 [main] TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 50007 (http)
+[INFO ] 2020-04-10T19:20:15,986 [main] StandardService - Starting service [Tomcat]
+[INFO ] 2020-04-10T19:20:15,996 [main] StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.20
+[INFO ] 2020-04-10T19:20:17,569 [localhost-startStop-1] [/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2020-04-10T19:20:17,572 [localhost-startStop-1] ContextLoader - Root WebApplicationContext: initialization completed in 17228 ms
+[INFO ] 2020-04-10T19:20:19,605 [localhost-startStop-1] ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+[INFO ] 2020-04-10T19:20:19,623 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+[INFO ] 2020-04-10T19:20:19,624 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[INFO ] 2020-04-10T19:20:19,625 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[INFO ] 2020-04-10T19:20:19,626 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+[INFO ] 2020-04-10T19:20:58,126 [main] RPCClient - Startup took 19792 msec
+[INFO ] 2020-04-10T19:21:00,947 [main] RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1ded7b14: startup date [Fri Apr 10 21:20:00 CEST 2020]; root of context hierarchy
+[INFO ] 2020-04-10T19:21:02,052 [main] RequestMappingHandlerMapping - Mapped "{[/api/example/me],methods=[GET],produces=[application/json]}" onto public final java.util.Map<java.lang.String, net.corda.core.identity.CordaX500Name> com.example.server.MainController.whoami()
+[INFO ] 2020-04-10T19:21:02,057 [main] RequestMappingHandlerMapping - Mapped "{[/api/example/peers],methods=[GET],produces=[application/json]}" onto public final java.util.Map<java.lang.String, java.util.List<net.corda.core.identity.CordaX500Name>> com.example.server.MainController.getPeers()
+[INFO ] 2020-04-10T19:21:02,058 [main] RequestMappingHandlerMapping - Mapped "{[/api/example/ious],methods=[GET],produces=[application/json]}" onto public final org.springframework.http.ResponseEntity<java.util.List<net.corda.core.contracts.StateAndRef<com.example.state.IOUState>>> com.example.server.MainController.getIOUs()
+[INFO ] 2020-04-10T19:21:02,060 [main] RequestMappingHandlerMapping - Mapped "{[/api/example/create-iou],methods=[POST],consumes=[application/x-www-form-urlencoded],produces=[text/plain]}" onto public final org.springframework.http.ResponseEntity<java.lang.String> com.example.server.MainController.createIOU(javax.servlet.http.HttpServletRequest)
+[INFO ] 2020-04-10T19:21:02,062 [main] RequestMappingHandlerMapping - Mapped "{[/api/example/my-ious],methods=[GET],produces=[application/json]}" onto public final org.springframework.http.ResponseEntity<java.util.List<net.corda.core.contracts.StateAndRef<com.example.state.IOUState>>> com.example.server.MainController.getMyIOUs()
+[INFO ] 2020-04-10T19:21:02,069 [main] RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[INFO ] 2020-04-10T19:21:02,072 [main] RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[INFO ] 2020-04-10T19:21:02,223 [main] SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2020-04-10T19:21:02,224 [main] SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2020-04-10T19:21:02,473 [main] SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2020-04-10T19:21:02,689 [main] WebMvcAutoConfiguration$WelcomePageHandlerMapping - Adding welcome page: class path resource [public/index.html]
+[INFO ] 2020-04-10T19:21:03,939 [main] AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+[INFO ] 2020-04-10T19:21:04,276 [main] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-50007"]
+[INFO ] 2020-04-10T19:21:04,405 [main] Http11NioProtocol - Starting ProtocolHandler ["http-nio-50007"]
+[INFO ] 2020-04-10T19:21:04,476 [main] NioSelectorPool - Using a shared selector for servlet write/read
+[INFO ] 2020-04-10T19:21:04,848 [main] TomcatEmbeddedServletContainer - Tomcat started on port(s): 50007 (http)
+[INFO ] 2020-04-10T19:21:04,880 [main] ServerKt - Started ServerKt in 71.626 seconds (JVM running for 87.821)
+[INFO ] 2020-04-10T19:21:21,621 [http-nio-50007-exec-9] [/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+[INFO ] 2020-04-10T19:21:21,623 [http-nio-50007-exec-9] DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+[INFO ] 2020-04-10T19:21:21,736 [http-nio-50007-exec-9] DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 113 ms
+[WARN ] 2020-04-10T20:14:53,954 [Thread-1 (ActiveMQ-client-factory-threads-1335405617)] RPCClientProxyHandler - Terminating observables.
+[ERROR] 2020-04-10T20:14:54,672 [Thread-1 (ActiveMQ-client-factory-threads-1335405617)] rejectedExecution - Failed to submit a listener notification task. Event loop shut down?
+java.util.concurrent.RejectedExecutionException: event executor terminated
+	at io.netty.util.concurrent.SingleThreadEventExecutor.reject(SingleThreadEventExecutor.java:842) ~[netty-common-4.1.29.Final.jar:4.1.29.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor.offerTask(SingleThreadEventExecutor.java:328) ~[netty-common-4.1.29.Final.jar:4.1.29.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor.addTask(SingleThreadEventExecutor.java:321) ~[netty-common-4.1.29.Final.jar:4.1.29.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor.execute(SingleThreadEventExecutor.java:765) ~[netty-common-4.1.29.Final.jar:4.1.29.Final]
+	at io.netty.util.concurrent.DefaultPromise.safeExecute(DefaultPromise.java:768) ~[netty-common-4.1.29.Final.jar:4.1.29.Final]
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:432) ~[netty-common-4.1.29.Final.jar:4.1.29.Final]
+	at io.netty.util.concurrent.DefaultPromise.setFailure(DefaultPromise.java:112) ~[netty-common-4.1.29.Final.jar:4.1.29.Final]
+	at io.netty.channel.DefaultChannelPromise.setFailure(DefaultChannelPromise.java:89) ~[netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.safeExecute(AbstractChannelHandlerContext.java:1010) ~[netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.close(AbstractChannelHandlerContext.java:610) ~[netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.close(AbstractChannelHandlerContext.java:465) ~[net
